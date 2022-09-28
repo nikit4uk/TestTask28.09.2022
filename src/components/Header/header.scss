@@ -1,0 +1,17 @@
+header{
+    background-color: var(--color-white);
+}
+.header-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.btn-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 210px;
+}

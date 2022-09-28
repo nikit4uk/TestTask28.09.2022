@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import './App.scss';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Users from './components/Users/Users';
+import UserForm from './components/UserForm/UserForm';
 
-function App() {
+const App = () => {
+  const [ users ] = useState([]);
+  const [ CountID ] = useState(70);
+  const [ userPerPage, setMoreUserPerPage ] = useState(6);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Header />
+      <Main />
+      <Users users={users} CountID={CountID} userPerPage={userPerPage} setMoreUserPerPage={setMoreUserPerPage} />
+      <UserForm users={users} CountID={CountID} userPerPage={userPerPage} setMoreUserPerPage={setMoreUserPerPage} />
+    </main>
   );
 }
 

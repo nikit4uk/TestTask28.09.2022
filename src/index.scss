@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+  --color-white: #FFF;
+  --color-grey: #F8F8F8;
+  --color-text: rgba(0, 0, 0, 0.87);
+  --color-btn: #F4E041;
+  --color-btn-hover: #FFE302;
+  --color-input-border: #D0CFCF;
+  --color-input-radio:#00BDD3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  word-break: break-word;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  line-height: 26px;
+}
+
+
